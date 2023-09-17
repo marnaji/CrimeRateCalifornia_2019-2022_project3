@@ -1,0 +1,18 @@
+Step to run flask on the terminal :
+To run your web application, you’ll first tell Flask where to find the application with the FLASK_APP environment variable:
+export FLASK_APP=app (name of the python file)
+
+Then run it in development mode with the FLASK_ENV environment variable:
+export FLASK_ENV=development
+
+
+Lastly, run the application using the flask run command:
+flask run
+
+
+Creating SQLite file that is readable on terminal:
+.read crimes.sql
+.mode csv 
+.import --skip 1 crime_df_cleaned_final.csv crimes
+.schema crimes
+
