@@ -1,0 +1,19 @@
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #333; /* Background color for the header */
+    color: white; /* Text color for the header */
+    padding: 20px 0; /* Add some padding to the header */
+    text-align: center; /* Center-align text in the header */
+  }
+  
+  .nav-links a {
+    color: white; /* Text color for navigation links */
+  }
+  
+  /* Dropdown alignment */
+  .well {
+    display: inline-block; /* Display dropdowns side by side */
+    margin-right: 10px; /* Add spacing between dropdowns */
+  }
