@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>California's Crime Rate</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static\css\style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Crime Rate California Dashboard</h1>
+          <p>From 2019 to 2022</p>
+          <div class="nav-links">
+            <a href="/readMe"> click here to access GitHub README</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <h5>Choose Year:</h5>
+          <select id="selYear"></select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="well">
+          <h5>Choose County:</h5>
+          <select id="selCounty"></select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Add charts and content here -->
+        <!-- 
+          example: 
+          <div class="col-md-5">
+          <div id="bar"></div>
+          </div> 
+        -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+</body>
+
+</html>
