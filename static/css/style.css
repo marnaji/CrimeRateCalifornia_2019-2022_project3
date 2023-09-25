@@ -8,12 +8,48 @@ header {
     text-align: center; /* Center-align text in the header */
   }
   
-  .nav-links a {
+.nav-links a {
     color: white; /* Text color for navigation links */
   }
   
   /* Dropdown alignment */
-  .well {
+.well {
     display: inline-block; /* Display dropdowns side by side */
     margin-right: 10px; /* Add spacing between dropdowns */
   }
+
+
+#year-control {
+      margin-top: 10px; /* Adjust the margin-top value to control the spacing between the two dropdowns */
+  }
+/* CA map page*/
+#calimap { height: 800px; }
+
+  /* The legend */
+
+#legend {
+  
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* The legend items */
+.legend-item {
+  margin-bottom: 5px;
+}
+
+/* The legend color boxes */
+.legend-color {
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+
