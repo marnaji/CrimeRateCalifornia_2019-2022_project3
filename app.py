@@ -20,6 +20,7 @@ def get_db_connection():
     conn.row_factory = dict_factory  # Use the dict_factory to get dictionaries instead of sqlite3.Row
     return conn
 
+
 @app.route('/data')
 def getData():
     conn = get_db_connection()
@@ -30,6 +31,21 @@ def getData():
     # Convert the list of dictionaries to JSON
     return jsonify(crimes)
 
+
+
+@app.route('/topCounties')
+def getCounties():
+    conn = get_db_connection()
+    conn.execute('PRAGMA case_sensitive_like=ON')  # Enable case sensitivity if needed
+    county_names = conn.execute('SELECT DISTINCT county FROM Crimes ORDER BY county_pop DESC LIMIT 7').fetchall()
+    conn.close()  # Close the database connection
+
+    # Convert the list of dictionaries to JSON
+    return jsonify(county_names)
+
+@app.route('/calimap')
+def getMap():
+    return render_template('calimap.html')
 
 
 @app.route('/')

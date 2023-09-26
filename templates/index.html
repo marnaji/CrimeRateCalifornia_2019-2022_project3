@@ -13,6 +13,19 @@
 <body>
 
   <header>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -44,12 +57,18 @@
     </div>
     
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-4">
         <!-- Add charts and content here -->
         <div class="col-md-10">
           <div id="bar"></div>
         </div>
         
+        
+          <div class="col-md-12">
+          <div id="chart_div" style="width: 900px; height: 500px;"></div>
+          </div> 
+        
+
       </div>
       <div class="col-md-100">
         <!-- Add charts and content here -->
@@ -65,6 +84,8 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
+  <!-- FrappChart library-->
+  
 </body>
 
 </html>
