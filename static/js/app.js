@@ -257,9 +257,9 @@ function init() {
           },
   
         ],
-        height: 600,
-        width: 600,
-        showlegend: false,
+        height: 500,
+        width: 500,
+        showlegend: true,
         grid: { rows: 1, columns: 1 }
       };
     
@@ -315,7 +315,7 @@ function init() {
   
           // Define the chart 
           var options = {
-            title: 'Crime Rate for the most Populous Counteis',
+            title: 'Crime Rate for the most Populous Counties',
             vAxis: { title: 'Number of Crimes' },
             hAxis: { title: 'Counties' },
             seriesType: 'bars',
