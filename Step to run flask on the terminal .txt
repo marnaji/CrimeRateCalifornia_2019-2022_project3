@@ -16,3 +16,6 @@ Creating SQLite file that is readable on terminal:
 .import --skip 1 crime_df_cleaned_final.csv crimes
 .schema crimes
 
+
+To turn on the debug: 
+export FLASK_DEBUG=1

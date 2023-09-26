@@ -17,3 +17,5 @@ CREATE TABLE Crimes(
     "vehicle_theft" INTEGER NOT NULL, 
     "larceny_theft" INTEGER NOT NULL
  );
+
+
