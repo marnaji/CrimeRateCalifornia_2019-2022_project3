@@ -1,0 +1,66 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>California</title>
+    
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    
+</head>
+<body>
+    <h1>Map of California</h1>
+
+    <div id="crime-type-control" class="leaflet-control leaflet-control-topright">
+        <label for="crime-type-select">Select Crime Type:</label>
+        <select id="crime-type-select">
+            <option value="violent">Violent</option>
+            <option value="homicide">Homicide</option>
+            <option value="rape">Rape</option>
+            <option value="robbery">Robbery</option>
+            <option value="agg_assault">Aggresive Assault</option>
+            <option value="property">Property</option>
+            <option value="burglary">Burglary</option>
+            <option value="vehicle_theft">Vehicle Theft</option>
+            <option value="larceny_theft">Larceny Theft</option>
+        </select>
+    </div>
+    
+    <div id="year-control" class="leaflet-control leaflet-control-topright">
+        <label for="year-select">Choose a Year:</label>
+        <select id="year-select">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+    </div>
+
+
+    <div id="legend" class="leaflet-control leaflet-control-custom"></div>
+
+    <div id="calimap"></div>
+    
+    
+    <script>
+        const geoJSONUrl = "{{ url_for('static', filename='california-counties.geojson') }}";
+    </script>
+
+    <script src="./static/js/calimap.js"></script>
+</body>
+</html>
